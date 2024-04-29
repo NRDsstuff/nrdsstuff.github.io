@@ -49,13 +49,13 @@
                      {myAge}<br />
                     <hr />
                     󰇄 Negative Zero Shitbox PRO<br />
-                     i5-10400f (16) @ 4.3GHz<br />
+                     i5-10400f (8) @ 4.3GHz<br />
                     󰍛 16 GB RAM<br />
                     󰍛 NVIDIA GeForce RTX 3060<br />
                      you wasted {timeFormat(seconds)}<br />
                     <hr />
                     󰓶 Microsoft Surface Pro 3<br />
-                     i5-10400f (16) @ 4.3GHz<br />
+                     i5-4300U (4) @ 2.9GHz<br />
                     󰍛 8 GB RAM<br />
                     <hr />
                      NixOS<br />
