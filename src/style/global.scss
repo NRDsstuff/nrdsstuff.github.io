@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Fira Code";
+    src: url("/FiraCodeNerdFontMono-Medium.ttf");
+}
+
+:root {
+    font-family: "Fira Code";
+    color: var(--foreground);
+    --foreground: #F0C5FF;
+    --background: #000;
+    --secondary: #CF8AE7;
+}
+
+* {
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--background);
+    overflow-y: hidden;
+    margin: 0;
+}
+
+a {
+    color: var(--foreground);
+    font-weight: bolder;
+}
+
+a:visited {
+    color: var(--foreground);
+}
+
+hr {
+    color: var(--foreground);
+    border-color: var(--foreground);
+}
