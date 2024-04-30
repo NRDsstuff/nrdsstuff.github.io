@@ -10,8 +10,8 @@
     import About from "./modules/About.svelte";
     import Dd from "./modules/Dd.svelte";
     const modules = [Welcome, Nerdfetch, About, Links, Projects, Blog, Authors, Dd];
-    let displayModules: any[] = [Welcome];
-    let i: number = 1;
+    let displayModules: any[] = [Welcome, Nerdfetch];
+    let i: number = 2;
     const s = setInterval(() => {
         if (displayModules.length == modules.length) {
             clearInterval(s);
@@ -19,7 +19,7 @@
 
         displayModules = [...displayModules, modules.at(i)];
         i++;
-    }, 1600);
+    }, 2000);
 </script>
 
 <article>
