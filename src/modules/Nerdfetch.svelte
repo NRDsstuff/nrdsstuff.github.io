@@ -33,25 +33,25 @@
              i5-10400f (8) @ 4.3GHz<br />
             󰍛 16 GB RAM<br />
             󰍛 NVIDIA GeForce RTX 3060<br />
-             you wasted {timeFormat(seconds)}<br />
             <hr />
             󰓶 Microsoft Surface Pro 3<br />
              i5-4300U (4) @ 2.9GHz<br />
             󰍛 8 GB RAM<br />
+            <hr />
+             Google Pixel 7 (panther) (main)<br />
+             Redmi note 11 (spesn)<br />
+             Samsung A52 (broken)<br />
+             Redmi note 10S (rosemary)<br />
+             Redmi note 9 (merlinnfc) (broken)<br />
+             Redmi note 8 (ginkgo)<br />
+             Huawei P Smart 2018 (fig-lx1)<br />
             <hr />
              NixOS<br />
              6.1<br />
              zsh<br />
              GNOME<br />
             <hr />
-             Google Pixel 7 (panther) (main)<br />
-             Redmi note 11 (spesn)<br />
-             Redmi note 10S (rosemary)<br />
-             Redmi note 9 (merlinnfc) (broken)<br />
-             Redmi note 8 (ginkgo)<br />
-             Huawei P Smart 2018 (fig-lx1)<br />
-            <hr />
-            <!-- meow did you finally fix the deployment issue? xd ajjta <3 nope but im gonna rice the website -->
+             you wasted {timeFormat(seconds)}<br />
             <a class="egg" href="egg.png" target="_blank">󰪯 egg</a>
         </div>
     </div>
