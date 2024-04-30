@@ -20,7 +20,7 @@
         }
         displayCommand += command.charAt(i);
         i++;
-    }, 100);
+    }, 50);
 </script>
 
 <div class="prompt">

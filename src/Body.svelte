@@ -19,7 +19,7 @@
 
         displayModules = [...displayModules, modules.at(i)];
         i++;
-    }, 2000);
+    }, 1500);
 </script>
 
 <article>
