@@ -14,22 +14,36 @@
 </script>
 
 <article>
-    <Welcome></Welcome>
-    <Nerdfetch></Nerdfetch>
-    <About></About>
-    <Links></Links>
-    <Projects></Projects>
-    <Authors></Authors>
-    <Blog />
-    <Prompt>
-        <div>dd</div>
-        <div>if=/dev/zero</div>
-        <div>of=/dev/sda1</div>
-        <Cursor />
-    </Prompt>
+    <div class="scrollbox">
+        <Welcome></Welcome>
+        <Nerdfetch></Nerdfetch>
+        <About></About>
+        <Links></Links>
+        <Projects></Projects>
+        <Authors></Authors>
+        <Blog />
+        <Prompt>
+            <div>dd</div>
+            <div>if=/dev/zero</div>
+            <div>of=/dev/sda1</div>
+            <Cursor />
+        </Prompt>
+    </div>
 </article>
 
 <style lang="scss">
+
+    .scrollbox{
+        overflow: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top: 0px;
+        padding: 1rem;
+        padding-left: 0;
+    }
 
     .egg {
         text-decoration: none;
@@ -46,10 +60,7 @@
         bottom: 8px;
         left: 8px;
         right: 8px;
-        padding: 1rem;
-        padding-left: 0;
-        overflow: scroll;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     /* width */
@@ -60,7 +71,7 @@
 
     /* Track */
     ::-webkit-scrollbar-track {
-        background: var(--background);
+        background: none;
         border-radius: 25px;
     }
 
