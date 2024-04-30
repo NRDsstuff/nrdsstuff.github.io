@@ -2,9 +2,7 @@
     import CommandBody from "../lib/CommandBody.svelte";
 </script>
 
-<CommandBody>
-    <span slot="command">cat about.txt</span>
-    <div slot="output">
+<CommandBody command="cat about.txt">
         hey! i'm just some random guy from warsaw, poland who likes to do
         stuff.<br />
         namely, i like to design user interfaces, program, hack my devices, nerd
@@ -19,5 +17,4 @@
         i'm a huge fan of XR (AR/VR) and i own a meta quest 2. (aldo i want a
         quest 3)<br />
         gonk 🤑<br /> jer jab tura anax aleks - CNB
-    </div>
 </CommandBody>

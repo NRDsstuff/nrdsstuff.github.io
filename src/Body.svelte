@@ -1,8 +1,5 @@
 <script lang="ts">
-    
-    import Cursor from "./lib/Cursor.svelte";
-    import Prompt from "./lib/Prompt.svelte";
-    
+    import { fade } from "svelte/transition";
     // modules
     import Welcome from "./modules/Welcome.svelte";
     import Nerdfetch from "./modules/Nerdfetch.svelte";
@@ -11,23 +8,27 @@
     import Authors from "./modules/Authors.svelte";
     import Projects from "./modules/Projects.svelte";
     import About from "./modules/About.svelte";
+    import Dd from "./modules/Dd.svelte";
+    const modules = [Welcome, Nerdfetch, About, Links, Projects, Blog, Authors, Dd];
+    let displayModules: any[] = [Welcome];
+    let i: number = 1;
+    const s = setInterval(() => {
+        if (displayModules.length == modules.length) {
+            clearInterval(s);
+        }
+
+        displayModules = [...displayModules, modules.at(i)];
+        i++;
+    }, 1600);
 </script>
 
 <article>
     <div class="scrollbox">
-        <Welcome></Welcome>
-        <Nerdfetch></Nerdfetch>
-        <About></About>
-        <Links></Links>
-        <Projects></Projects>
-        <Authors></Authors>
-        <Blog />
-        <Prompt>
-            <div>dd</div>
-            <div>if=/dev/zero</div>
-            <div>of=/dev/sda1</div>
-            <Cursor />
-        </Prompt>
+        {#each displayModules as mod}
+            <div in:fade>
+                <svelte:component this={mod}></svelte:component>
+            </div>
+        {/each}
     </div>
 </article>
 

@@ -2,9 +2,7 @@
     import CommandBody from "../lib/CommandBody.svelte";
 </script>
 
-<CommandBody>
-    <div slot="command">cat links.txt</div>
-    <div slot="output">
+<CommandBody command="cat links.txt">
         <div class="links">
             <a href="https://t.me/nrdeez"> Telegram</a>
             <a href="https://youtube.com/@nrdfoss"> YouTube</a>
@@ -13,7 +11,6 @@
             <a href="https://discord.gg/XuwCS8ydya">󰙯 Discord</a>
             <a href="https://buymeacoffee.com/nrdeez/">󰅶 Buy me a coffee</a>
         </div>
-    </div>
 </CommandBody>
 
 <style lang="scss">
