@@ -11,8 +11,16 @@
     --secondary: #CF8AE7;
 }
 
+.egg {
+    text-decoration: none;
+}
+
 * {
     overflow: hidden;
+}
+
+hr {
+    color: var(--foreground);
 }
 
 body {

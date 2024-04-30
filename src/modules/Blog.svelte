@@ -1,6 +1,6 @@
 <script lang="ts">
     import SvelteMarkdown from "svelte-markdown";
-    import CommandBody from "./CommandBody.svelte";
+    import CommandBody from "../lib/CommandBody.svelte";
 
     async function loadMarkdownFile(
         index: number,
@@ -38,29 +38,17 @@
 </script>
 
 {#await loadMarkdownFile(currentMdFile)}
-    <CommandBody>
-        <span slot="command">glow ???.md</span>
-        <div slot="output" class="output">loading blog...</div>
-    </CommandBody>
+    <CommandBody command="glow ???.md">loading blog...</CommandBody>
 {:then md}
-    <CommandBody>
-        <span slot="command">
-            glow
-            {md.date}.md
-        </span>
-        <div slot="output" class="output">
+    <CommandBody command={`glow ${md.date}.md`}>
             <button on:click={prevBlog}>◀</button>
             {currentMdFile + 1} out of {blogFiles.length}
             <button on:click={nextBlog}>▶</button>
             <hr />
             <SvelteMarkdown source={md.content}></SvelteMarkdown>
-        </div>
     </CommandBody>
 {:catch}
-    <CommandBody>
-        <span slot="command">glow ???.md</span>
-        <div slot="output" class="output">unable to load the blog...</div>
-    </CommandBody>
+    <CommandBody command="glow ???.md">unable to load the blog...</CommandBody>
 {/await}
 
 <style lang="scss">
