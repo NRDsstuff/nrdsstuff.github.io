@@ -19,30 +19,40 @@
         Authors,
         Dd
     ];
+    let sex: boolean = true;
+    let scrollbox: any;
     let displayModules: any[] = [Welcome, Nerdfetch];
     let i: number = 2;
     const s = setInterval(() => {
         if (displayModules.length == modules.length) {
             clearInterval(s);
+            sex = false;
         }
-
+        
+        scrollbox.scrollTop = scrollbox.scrollHeight;
+        
         displayModules = [...displayModules, modules.at(i)];
         i++;
     }, 1500);
 </script>
 
 <article>
-    <div class="scrollbox">
+    <div bind:this={scrollbox} class="scrollbox">
         {#each displayModules as mod}
-            <div in:fade>
+            <div>
                 <svelte:component this={mod}></svelte:component>
             </div>
         {/each}
+        {#if sex}
+        <span style="height: {document.documentElement.scrollHeight * 0.75}px;" class="filler"></span>
+        {/if}
     </div>
 </article>
 
 <style lang="scss">
-
+    .filler{
+        display: inline-block;
+    }
     .scrollbox{
         overflow: scroll;
         overflow-x: hidden;
