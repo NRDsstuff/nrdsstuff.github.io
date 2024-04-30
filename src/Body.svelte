@@ -60,13 +60,13 @@
 
     /* Track */
     ::-webkit-scrollbar-track {
-        background: var(--foreground);
+        background: var(--background);
         border-radius: 25px;
     }
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: #888;
+        background: var(--foreground);
         border-radius: 40px;
     }
 
