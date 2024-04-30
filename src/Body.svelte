@@ -45,10 +45,6 @@
         padding-left: 0;
     }
 
-    .egg {
-        text-decoration: none;
-    }
-
     article {
         border-width: 3px;
         border-style: solid;
