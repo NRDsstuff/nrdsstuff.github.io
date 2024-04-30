@@ -9,7 +9,16 @@
     import Projects from "./modules/Projects.svelte";
     import About from "./modules/About.svelte";
     import Dd from "./modules/Dd.svelte";
-    const modules = [Welcome, Nerdfetch, About, Links, Projects, Blog, Authors, Dd];
+    const modules = [
+        Welcome,
+        Nerdfetch,
+        About,
+        Links,
+        Projects,
+        Blog,
+        Authors,
+        Dd
+    ];
     let displayModules: any[] = [Welcome, Nerdfetch];
     let i: number = 2;
     const s = setInterval(() => {
