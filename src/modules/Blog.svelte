@@ -1,6 +1,6 @@
 <script lang="ts">
     import SvelteMarkdown from "svelte-markdown";
-    import CommandBody from "./CommandBody.svelte";
+    import CommandBody from "../lib/CommandBody.svelte";
 
     async function loadMarkdownFile(
         index: number,
