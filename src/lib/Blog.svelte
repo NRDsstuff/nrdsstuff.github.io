@@ -19,9 +19,11 @@
     let index: number = 0;
     const markdownModules = import.meta.glob("../../blog/*.md");
     for (const modulePath in markdownModules) {
-        blogFiles.push(index);
+        blogFiles.push(modulePath.substring(11, modulePath.length - 3));
         index++;
     }
+    blogFiles.sort((a, b) => +a - +b)
+    console.log(blogFiles)
 
     let currentMdFile = blogFiles.length - 1;
     const prevBlog = () => {
