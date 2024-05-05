@@ -3,6 +3,8 @@
     import CommandBody from "../lib/CommandBody.svelte";
     export let scrollbox: any;
 
+    let noAnimation: boolean = false;
+
     async function loadMarkdownFile(
         index: number,
     ): Promise<{ content: string; date: string | undefined }> {
@@ -30,18 +32,20 @@
     const prevBlog = () => {
         if (currentMdFile == 0) return;
         currentMdFile--;
+        noAnimation = true;
     };
 
     const nextBlog = () => {
         if (currentMdFile == blogFiles.length - 1) return;
         currentMdFile++;
+        noAnimation = true;
     };
 </script>
 
 {#await loadMarkdownFile(currentMdFile)}
     <CommandBody command="glow ???.md">loading blog...</CommandBody>
 {:then md}
-    <CommandBody {scrollbox} command={`glow ${md.date}.md`}>
+    <CommandBody {noAnimation} {scrollbox} command={`glow ${md.date}.md`}>
         <button on:click={prevBlog}>◀</button>
         {currentMdFile + 1} out of {blogFiles.length}
         <button on:click={nextBlog}>▶</button>
