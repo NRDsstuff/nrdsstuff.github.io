@@ -14,9 +14,10 @@
     function changeCat() {
         randomCat = cats[Math.floor(Math.random() * cats.length)];
     }
+    export let scrollbox: any;
 </script>
 
-<CommandBody command="nerdfetch --balls">
+<CommandBody command="nerdfetch --balls" {scrollbox}>
     <div class="neofetch">
         <div class="kitty">
             <!-- svelte-ignore a11y-click-events-have-key-events -->

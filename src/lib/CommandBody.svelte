@@ -6,6 +6,7 @@
     export let command: string;
     export let ready: boolean = false;
     export let noAnimation: boolean = false;
+    export let scrollbox: any = undefined;
 
     if (noAnimation) {
         ready = true;
@@ -17,6 +18,9 @@
         if (displayCommand.length === command.length) {
             ready = true;
             clearInterval(stop);
+            if (scrollbox != undefined) {
+                scrollbox.scrollTop = scrollbox.scrollHeight;
+            }
         }
         displayCommand += command.charAt(i);
         i++;

@@ -17,7 +17,7 @@
         Projects,
         Blog,
         Authors,
-        Dd
+        Dd,
     ];
     let sex: boolean = true;
     let scrollbox: any;
@@ -28,9 +28,7 @@
             clearInterval(s);
             sex = false;
         }
-        
-        scrollbox.scrollTop = scrollbox.scrollHeight;
-        
+
         displayModules = [...displayModules, modules.at(i)];
         i++;
     }, 1500);
@@ -40,20 +38,24 @@
     <div bind:this={scrollbox} class="scrollbox">
         {#each displayModules as mod}
             <div>
-                <svelte:component this={mod}></svelte:component>
+                <svelte:component this={mod} {scrollbox}></svelte:component>
             </div>
         {/each}
         {#if sex}
-        <span style="height: {document.documentElement.scrollHeight * 0.75}px;" class="filler"></span>
+            <span
+                style="height: {document.documentElement.scrollHeight *
+                    0.75}px;"
+                class="filler"
+            ></span>
         {/if}
     </div>
 </article>
 
 <style lang="scss">
-    .filler{
+    .filler {
         display: inline-block;
     }
-    .scrollbox{
+    .scrollbox {
         overflow: scroll;
         overflow-x: hidden;
         position: absolute;

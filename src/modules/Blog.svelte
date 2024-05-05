@@ -1,6 +1,7 @@
 <script lang="ts">
     import SvelteMarkdown from "svelte-markdown";
     import CommandBody from "../lib/CommandBody.svelte";
+    export let scrollbox: any;
 
     async function loadMarkdownFile(
         index: number,
@@ -22,8 +23,8 @@
         blogFiles.push(modulePath.substring(11, modulePath.length - 3));
         index++;
     }
-    blogFiles.sort((a, b) => +a - +b)
-    console.log(blogFiles)
+    blogFiles.sort((a, b) => +a - +b);
+    console.log(blogFiles);
 
     let currentMdFile = blogFiles.length - 1;
     const prevBlog = () => {
@@ -40,12 +41,12 @@
 {#await loadMarkdownFile(currentMdFile)}
     <CommandBody command="glow ???.md">loading blog...</CommandBody>
 {:then md}
-    <CommandBody command={`glow ${md.date}.md`}>
-            <button on:click={prevBlog}>◀</button>
-            {currentMdFile + 1} out of {blogFiles.length}
-            <button on:click={nextBlog}>▶</button>
-            <hr />
-            <SvelteMarkdown source={md.content}></SvelteMarkdown>
+    <CommandBody {scrollbox} command={`glow ${md.date}.md`}>
+        <button on:click={prevBlog}>◀</button>
+        {currentMdFile + 1} out of {blogFiles.length}
+        <button on:click={nextBlog}>▶</button>
+        <hr />
+        <SvelteMarkdown source={md.content}></SvelteMarkdown>
     </CommandBody>
 {:catch}
     <CommandBody command="glow ???.md">unable to load the blog...</CommandBody>

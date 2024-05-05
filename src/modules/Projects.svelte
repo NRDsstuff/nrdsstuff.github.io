@@ -1,8 +1,9 @@
 <script lang="ts">
     import CommandBody from "../lib/CommandBody.svelte";
+    export let scrollbox: any;
 </script>
 
-<CommandBody command="cat projects.txt">
+<CommandBody command="cat projects.txt" {scrollbox}>
     i made some weird stuff in the past, take a look
     <div class="links" style="padding-top: 1rem;">
         <a href="https://github.com/negative-zero-inft/ixni-docs"> 󰗊 ixni</a>
