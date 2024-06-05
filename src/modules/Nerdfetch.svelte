@@ -39,6 +39,10 @@
              i5-4300U (4) @ 2.9GHz<br />
             󰍛 8 GB RAM<br />
             <hr />
+            󰓶 Apple MacBook 13" late 2013 model<br />
+             i5-4258U (4) @ 2.4GHz<br />
+            󰍛 8 GB RAM<br />
+            <hr />
              Google Pixel 7 (panther) (main)<br />
              Redmi note 11 (spesn)<br />
              Samsung A52 (broken)<br />
@@ -46,6 +50,9 @@
              Redmi note 9 (merlinnfc) (broken)<br />
              Redmi note 8 (ginkgo)<br />
              Huawei P Smart 2018 (fig-lx1)<br />
+             Google Pixel 3a (sargo) (2 models)<br />
+             iPhone se 1st gen (unusable screen)<br />
+             iPhone 6 (bootlooping)<br />
             <hr />
              NixOS<br />
              6.1<br />
