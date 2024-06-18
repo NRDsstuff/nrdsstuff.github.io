@@ -18,9 +18,9 @@
         if (displayCommand.length === command.length) {
             ready = true;
             clearInterval(stop);
-            if (scrollbox != undefined) {
-                scrollbox.scrollTop = scrollbox.scrollHeight;
-            }
+            // if (scrollbox != undefined) {
+            //     scrollbox.scrollTop = scrollbox.scrollHeight;
+            // }
         }
         displayCommand += command.charAt(i);
         i++;
