@@ -39,7 +39,7 @@
              i5-4300U (4) @ 2.9GHz<br />
             󰍛 8 GB RAM<br />
             <hr />
-            󰓶 Apple MacBook 13" late 2013 model<br />
+             Apple MacBook 13" late 2013 model<br />
              i5-4258U (4) @ 2.4GHz<br />
             󰍛 8 GB RAM<br />
             <hr />
