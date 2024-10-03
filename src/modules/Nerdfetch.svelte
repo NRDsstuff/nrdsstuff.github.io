@@ -26,7 +26,7 @@
         </div>
         <div class="info">
             󰄛 Alex, NRD<br />
-            󰊝 he/him<br />
+            󰊝 male (he/him)<br />
              Europe, Poland<br />
              {myAge}<br />
             <hr />
@@ -53,6 +53,9 @@
              Google Pixel 3a (sargo) (2 models)<br />
              iPhone se 1st gen (unusable screen)<br />
              iPhone 6 (bootlooping)<br />
+            <hr />
+             Meta Quest 2 (128GB)<br />
+             Meta Quest 3 (128GB)<br />
             <hr />
              NixOS<br />
              6.1<br />
