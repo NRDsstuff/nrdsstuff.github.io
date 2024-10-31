@@ -11,7 +11,7 @@
         <a href="https://techhub.social/@nrd">󰫑 Mastodon</a>
         <a href="https://discord.gg/XuwCS8ydya">󰙯 Discord</a>
         <a href="https://buymeacoffee.com/nrdeez/">󰅶 Buy me a coffee</a>
-        <a href="https://www.figma.com/@nrd"> Figma</a>
+        <a href="https://www.figma.com/@nrd">󰏘 Figma</a>
     </div>
 </CommandBody>
 
