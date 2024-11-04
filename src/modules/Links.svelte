@@ -12,7 +12,8 @@
         <a href="https://discord.gg/XuwCS8ydya">󰙯 Discord</a>
         <a href="https://buymeacoffee.com/nrdeez/">󰅶 Buy me a coffee</a>
         <a href="https://www.figma.com/@nrd">󰏘 Figma</a>
-    </div>
+        <a href="https://ovk.to/id18798"> OpenVK</a>
+</div>
 </CommandBody>
 
 <style lang="scss">
