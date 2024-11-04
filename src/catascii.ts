@@ -9,6 +9,7 @@ export const cats = [
     "ദ്ദി（• ˕ •マ.ᐟ",
     "ᓚ₍ ^. .^₎",
     "xaro jer",
-    "i stole\nthe icon"
+    "i stole\nthe icon",
+    "ching\nchong"
 ]
 // max 11 characters per line and 5 lines
