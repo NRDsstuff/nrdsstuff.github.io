@@ -3,8 +3,8 @@
     This is NRD's personal website.<br />
     By the way, this page is
     <a href="https://github.com/nrdsstuff/nrdsstuff.github.io">
-        open source
-    </a>!
+        open source!
+    </a>
 </div>
 
 <style lang="scss">
