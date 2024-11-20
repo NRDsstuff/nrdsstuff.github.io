@@ -16,7 +16,7 @@
             󰇧 this website</a
         >
         <a href="https://github.com/raluvy95/raluvy95.github.io">
-            󰇧 catnowblue's website</a
+            󰇧 my girlfriend's website</a
         >
         <a href="https://github.com/negative-zero-inft/plugbot-neu">
              plugbot</a

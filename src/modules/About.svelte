@@ -16,5 +16,5 @@
     and most of them are running a custom ROM<br />
     i'm a huge fan of XR (AR/VR) and i own a meta quest 2. (aldo i want a quest 3)<br
     />
-    gonk 🤑<br />
+    gonk 🤑<br /> jer jab tura anax aleks - CNB
 </CommandBody>
