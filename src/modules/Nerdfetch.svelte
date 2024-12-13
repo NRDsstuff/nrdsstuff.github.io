@@ -43,7 +43,8 @@
              i5-4258U (4) @ 2.4GHz<br />
             󰍛 8 GB RAM<br />
             <hr />
-             Xiaomi 11T (amber) (hopefully temporary main)<br />
+             Nothing Phone (2) (ao65) (main)<br />
+             Xiaomi 11T (amber)<br />
              Google Pixel 7 (panther) (broken)<br />
              Redmi note 11 (spesn)<br />
              Samsung A52 (broken)<br />
